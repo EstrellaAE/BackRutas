@@ -1,0 +1,8 @@
+.pi {
+  cursor: pointer;
+  margin-left: 7px;
+}
+
+.float-end {
+  float: right !important;
+}

@@ -1,0 +1,25 @@
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { RutasComponent } from './rutas.component';
+import { FormsModule } from '@angular/forms'; 
+import { HttpClientModule } from '@angular/common/http'; 
+
+describe('RutasComponent', () => {
+  let component: RutasComponent;
+  let fixture: ComponentFixture<RutasComponent>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [RutasComponent], 
+      imports: [FormsModule, HttpClientModule] 
+    })
+    .compileComponents();
+
+    fixture = TestBed.createComponent(RutasComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});

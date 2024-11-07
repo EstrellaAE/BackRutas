@@ -44,13 +44,13 @@ export class RutaService {
 
   // Desactivar ruta
   desactivarRuta(id: string): Observable<any> {
-    return this.http.patch(`${this.url}/${id}/desactivar`, {});
+    return this.http.patch(`${this.url}/${id}/desactivarRuta`, {});
   }
   
 
  // Activar ruta
 activarRuta(id: string): Observable<any> {
-  return this.http.patch(`${this.url}/${id}/activar`, {});
+  return this.http.patch(`${this.url}/${id}/activarRuta`, {});
 }
 
 
